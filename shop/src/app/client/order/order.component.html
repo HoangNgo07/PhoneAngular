@@ -1,0 +1,38 @@
+<div class="container mt-5">
+    <h2>Domestic Goods Purchase Information</h2>
+    <form (submit)=" onSubmit()">
+        <div class="mb-3">
+            <label for="buyerName" class="form-label">Buyer Name</label>
+            <input name="buyername" [(ngModel)]="buyerName" type="text" class="form-control" id="buyerName" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input name="email" [(ngModel)]="email" type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="address" class="form-label">Shipping Address</label>
+            <input name="address" [(ngModel)]="address" type="text" class="form-control" id="address" placeholder="1234 Main St">
+        </div>
+       
+       
+        <div class="mb-3">
+            <label for="zip" class="form-label">Phone number</label>
+            <input type="text" class="form-control" id="zip" placeholder="Enter Phone number"name="zip" [(ngModel)]="phone">
+        </div>
+
+        <div class="mb-3">
+            <label for="paymentMethod" class="form-label">Payment Method</label>
+            <select class="form-select" id="paymentMethod" name="paymentType" [(ngModel)]="paymentType">
+                <option selected>Choose...</option>
+                <option value="creditCard">Credit Card</option>
+                <option value="debitCard">Debit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz4fnFO9gybBud7M4wD2BxO//+cJt6xKgKK2u8z2l2/1c2f5sU6YTEQ2z0"
+    crossorigin="anonymous"></script>

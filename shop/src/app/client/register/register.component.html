@@ -1,0 +1,32 @@
+<div class="container">
+  <form  class="was-validated" (ngSubmit)="onSubmit()">
+    <div class="mb-3 mt-3">
+      <label for="uname" class="form-label">Username:</label>
+      <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required [(ngModel)]="Username">
+
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="mb-3 mt-3">
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter your email address" name="email" required  [(ngModel)]="Email">
+
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="mb-3 mt-3">
+      <label for="phone" class="form-label">Phone number:</label>
+      <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" name="phone" required  [(ngModel)]="Phone">
+
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="mb-3">
+      <label for="pwd" class="form-label">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required  [(ngModel)]="Password">
+
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    
+
+    <button type="submit" class="btn btn-primary">Register</button>
+    <a class="btn  btn-success" routerLink="/login">I already have an account</a>
+  </form>
+</div>

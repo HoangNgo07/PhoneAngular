@@ -1,0 +1,16 @@
+<div class="container">
+    <form class="was-validated" (submit)="onSubmit()">
+        <div class="mb-3 mt-3">
+            <label for="phone" class="form-label">Phone number:</label>
+            <input type="text" class="form-control" id="phone" placeholder="Enter Phone number" name="phone" required [(ngModel)]="phone">
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="mb-3">
+            <label for="pwd" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required [(ngModel)]="password">
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <a class="btn  btn-success" routerLink="/register">I do not have account</a>
+    </form>
+</div>
